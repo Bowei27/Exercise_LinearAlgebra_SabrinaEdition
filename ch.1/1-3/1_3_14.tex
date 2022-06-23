@@ -1,0 +1,25 @@
+Let $S$ be a nonempty set and $F$ a field. Let $C(S,F)$ denote the set of all functions $f \in F(S,F)$ such that $f(s) = 0$ for all but a finite number of elements of $S$. Prove that $C(S,F)$ is a subspace of $F(S,F)$
+
+\begin{tcolorbox}
+	\begin{solution}
+		\textbf{Claim.} $C(S,F)$ is a subspace of $F(S,F)$
+		
+		\begin{enumerate}
+			\item let $f,g \in C(S,F)$\\
+			$f(s) \neq 0$ when $s \in \sett{s_1,s_2,\cdots,s_n}$
+			$g(s) \neq 0$ when $s \in \sett{s_1,s_2,\cdots,s_m}$
+			$(f+g)(s)$\\
+			$=f(s)+g(s)$\\
+			$f(s)+f(s) \neq 0$ only if $s \in (\sett{s_1,s_2,\cdots,s_n}\cup\sett{s'_1,s'_2,\cdots,s'_n})$\\
+			$\because \#(\sett{s_1,s_2,\cdots,s_n}\cup\sett{s'_1,s'_2,\cdots,s'_n}) \leq n+m$ is finite\\
+			$\therefore (f+g)(s) \in C(S,F)$
+			\item let $c \in \mathrm{F}$\\
+			$cf(s) \neq 0$ only if $s \in \sett{s_1,s_2,\cdots,s_n}$\\
+			$\because \#(\sett{s_1,s_2,\cdots,s_n}) = n$ is finite\\
+			$\therefore cf(s) \in C(S,F)$
+			\item $f' \in F(S,F)$,
+			$f'(s) = 0 \,\, s\in S$,
+			$f' \in C(S,F)$
+		\end{enumerate}
+	\end{solution}	
+\end{tcolorbox}
