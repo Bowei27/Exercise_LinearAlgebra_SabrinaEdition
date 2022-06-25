@@ -7,9 +7,14 @@ Show that if $S_1$ and $S_2$ are arbitrary subsets of a vector space $\mathrm{V}
 		
 		$S_1 = \sett{u_1,u_2,\cdots,u_m,v_1,\cdots,v_n} , S_2 = \sett{r_1,\cdots,r_k,v_{1}, \cdots,v_{n}}$  
 		
-		\textbf{Claim.} span($S_1$)+span($S_2$) $\subseteq$ span($S_1 \cup S_2$)\\
-		let $x \in \spann{S_1}+\spann{S_2})$\\
-		$x = (a_1u_1+ \cdots +a_mu_m+a_{m+1}v_1+\cdots + a_{m+n}v_{n})+$\\$(b_1r_1+\cdots+\b_kr_k + b_{k+1}v_1 + \cdots + b_{k+n}v_n)$\\
+		\textbf{Claim.} span($S_1$)+span($S_2$) $\subseteq$ span($S_1 \cup S_2$)
+		
+		let $x \in \spann{S_1}+\spann{S_2})$
+		
+		$x = (a_1u_1+ \cdots +a_mu_m+a_{m+1}v_1+\cdots + a_{m+n}v_n) + $
+		
+		$ (b_1r_1+\cdots+b_kr_k + b_{k+1}v_1 + \cdots + b_{k+n}v_n) $
+		
 		$=(c_1u_1 + \cdots + c_mu_m)+(c_{m+1}r_1+ \cdots + c_{m+k})+(c_{m+k+1}v_1 + \cdots + c_{m+k+n})$
 		$\Rightarrow x \in \spann{S_1 \cup S_2}$
 		
@@ -18,7 +23,7 @@ Show that if $S_1$ and $S_2$ are arbitrary subsets of a vector space $\mathrm{V}
 		\textbf{Claim.} $\spann{S_1 \cup S_2} \subseteq \spann{S_1} + \spann{S_2}$\\
 		let $y \in \spann{S_1 \cup S_2}$\\
 		$y = (c_1u_1 + \cdots + c_mu_m)+(c_{m+1}r_1+ \cdots + c_{m+k})+(c_{m+k+1}v_1 + \cdots + c_{m+k+n})$\\
-		$= (a_1u_1+ \cdots +a_mu_m+a_{m+1}v_1+\cdots + a_{m+n}v_{n}) + (b_1r_1+\cdots+\b_kr_k + b_{k+1}v_1 + \cdots + b_{k+n}v_n)$\\
+		$= (a_1u_1+ \cdots +a_mu_m+a_{m+1}v_1+\cdots + a_{m+n}v_{n}) + (b_1r_1+\cdots + b_kr_k + b_{k+1}v_1 + \cdots + b_{k+n}v_n)$\\
 		$\therefore y \in \spann{S_1} + \spann{s_2}$\\
 		$\therefore \spann{S_1} + \spann{S_2} = \spann{S_1 \cup S_2}$
 		
