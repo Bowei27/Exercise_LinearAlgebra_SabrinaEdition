@@ -1,0 +1,15 @@
+Prove that if $W_1$ is any subspace of a finite-dimensional vector space V, then there exists a subspace $W_2$ of V such that V = $W_1 \bigoplus W_2$
+
+\begin{tcolorbox}
+	\begin{solution}
+		let $\beta_1 = \sett{v_1,v_2,\cdots,v_m}$,dim(V) = $n$\\
+		by Corollary of Replacement Theorem, Every linearly independent subset of V can be extended to a basis for V\\
+		$\Rightarrow \exists \beta = \sett{v_1,v_2,\cdots,v_m,u_1,u_2,\cdots,u_{n-m}}$ is a basis of V\\
+		\textbf{Claim.} $\spann{\sett{u_1,u_2,\cdots,u_{n-m}}} \bigoplus W_1 = V$
+		let $v' \in W_1, u' \in \spann{\sett{u_1,u_2,\cdots,u_{n-m}}} $\\
+		$\because \beta$ is a linearly independent set
+		$\therefore v' \notin \spann{\sett{u_1,u_2,\cdots,u_{n-m}}}, u' \notin W_1$\\
+		$\Rightarrow W_1 \cap W_2 = \sett{0}$
+		$\therefore \spann{\sett{u_1,u_2,\cdots,u_{n-m}}} \bigoplus W_1 = V$
+	\end{solution}
+\end{tcolorbox}
