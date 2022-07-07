@@ -5,8 +5,7 @@
 
 \begin{tcolorbox}
 	\begin{solution}
-		\begin{enumerate}
-			\item[(a)] let $\beta$ is a basis of $W_1 \cap W_2$ dim($W_1$) = $k+m$,
+			\textbf{(a)} let $\beta$ is a basis of $W_1 \cap W_2$ dim($W_1$) = $k+m$,
 			
 			 dim($W_2$) = $k+n$, dim($W_1 \cap W_2$) = $k$, $k,m,n \in \mathbb{Z}^{\geq 0}$ 
 			 
@@ -38,11 +37,30 @@
 			
 			$\therefore span(\sett{u_1,\cdots,u_k,v_1,\cdots,v_m,w_1,\cdots,w_n}) = W_1 + W_2$
 			
-			%%%%%待修改
+	\end{solution}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+	\begin{solution}
+		\textbf{Claim.} $\sett{u_1,\cdots,u_k,v_1,\cdots,v_m,w_1,\cdots,w_n}$ is linearly independent
 			
-			$\because v_1,v_2,\cdots,v_m \notin W_2,w_1,w_2,\cdots w_n \notin W_1$
+			$\sum^k_{i=1}a_iu_i + \sum^m_{i=1}b_iv_i + \sum^n_{i=1}c_iw_i = 0$
 			
-			%%%%%待修改
+			$\Rightarrow \sum^k_{i=1}a_iu_i + \sum^m_{i=1}b_iv_i = -\sum^n_{i=1}c_iw_i$
+			
+			$\because \sum^{k}_{i=1} + \sum^{m}_{i=1}b_iv_i \in W_1~,~ -\sum^n_{i=1}c_iw_i \in W_2$
+			
+			$\therefore \sum^k_{i=1}a_iu_i + \sum^m_{i=1}b_iv_i~,~-\sum^n_{i=1}c_iw_i \in W_1 \cap W_2$
+			
+			$\Rightarrow \exists d_i \in \mathrm{F}, sum^k_{i=1}a_iu_i + \sum^m_{i=1}b_iv_i = -\sum^n_{i=1}c_iw_i = \sum^k_{i=1}d_iu_i$
+			
+			$\because \beta_1 , \beta_2$ is linearly independent
+			
+			$\therefore -\sum^n_{i=1}c_iw_i = \sum^k_{i=1}d_iu_i$ only scalar is 0
+			
+			$sum^k_{i=1}a_iu_i + \sum^m_{i=1}b_iv_i = 0$ only scalar is 0
+			
+			$\therefore \{u_1,\cdots,u_k,v_1,\cdots,v_m,W_1,\cdots,w_n\}$ is linearly independent
 			
 			$\therefore \sett{u_1,u_2,\cdots,u_k,v_1,v_2,\cdots,v_m,w_1,w_2,\cdots,w_n}$ is linearly independent
 			
@@ -54,11 +72,9 @@
 			
 			dim($W_1 + W_2$) = dim($W_1$) + dim($W_2$) + dim($W_1 \cap W_2$)
 			
-			
-			\item[(b)] $W_1 \cap W_2 = \sett{0}$
+			\textbf{(b)} $W_1 \cap W_2 = \sett{0}$
 			
 			by Exercise 1.16.29(a), if $W_1$ and $W_2$ are finite-dimensional subspace of a vector space V, dim(V) = dim($W_1$) + dim($W_2$) - dim($W_1 \cap W_2$) = dim($W_1$) + dim($W_2$) - dim($\sett{0}$) = dim($W_1$) + dim($W_2$)
 			
-		\end{enumerate}
 	\end{solution}
 \end{tcolorbox}

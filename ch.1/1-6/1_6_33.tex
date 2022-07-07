@@ -1,6 +1,6 @@
 \begin{enumerate}
 	\item[(a)] Let $W_1$ and $W_2$ be subspaces of a vector space V such that V $= W_1 \bigoplus W_2$. If $\beta_{1}$ and $\beta_{2}$ are bases for $W_1$ and $W_2$, respectively, show that $\beta_1 \cap \beta_2 = \varnothing$ and $\beta_1 \cup \beta_2$ is a basis for V.
-	\item[(b)] Conversely, let $\beta_1$ and $\beta_2$ be disjoint bases for subspaces $W_1$ and $W_2$, respectively, of a vector space V. Prove that if $\beta_1 \cup \beta_2$ is a basis for V, then V $= W_1 \bigoplus W_2$.
+	%\item[(b)] Conversely, let $\beta_1$ and $\beta_2$ be disjoint bases for subspaces $W_1$ and $W_2$, respectively, of a vector space V. Prove that if $\beta_1 \cup \beta_2$ is a basis for V, then V $= W_1 \bigoplus W_2$.
 \end{enumerate}
 
 \begin{tcolorbox}
@@ -21,7 +21,7 @@
 		
 		$\therefore \sum^{n}_{i=1}a_iv_i \in W_1~,~ \sum^{m}_{i=1}b_iu_i \in W_2$
 		
-		$\therefore x \in W_1 + W_2,\spann{\beta_1 \cup beta_2} \subseteq W_1 + W_2$
+		$\therefore x \in W_1 + W_2,\spann{\beta_1 \cup \beta_2} \subseteq W_1 + W_2$
 		
 		\textbf{Claim.} $W_1 + W_2 \subseteq \spann{\beta_1 \cup \beta_2}$
 		
@@ -35,17 +35,23 @@
 
 		%以下等待修改
 
-		\textbf{Claim} ${\beta_1 \cup \beta_2}$ is linearly dependent
+		\textbf{Claim} ${\beta_1 \cup \beta_2}$ is linearly independent
 		
-		$\exists~a_iv_i$ or $b_iu_i$ can be express by
+		$\sum^n_{i=1}a_iv_1 + \sum^m_{i=1}b_iu_i = 0$
 		
-		$-a_iv_i = (a_1v_1+\cdots+a_nv_n)+(b_1u_1+\cdots+b_mu_m)$ 
+		$\sum^n_{i_1}a_iv_i = -\sum^m_{i=1}b_iu_i$
 		
-		$\because v_i \notin \spann{\beta_1-\sett{v_i}}, v_i \notin \spann{\beta_2}$
+		$\because \sum^n_{i=1}a_iv_i \in W_1~,~ -\sum^m_{i=1}b_iu_i \in W_2$
 		
-		$-b_iu_i = (a_1v_1+\cdots+a_nv_n)+(b_1u_1+\cdots+b_mu_m)$ 
+		$\sum^n_{i=1}a_iv_i~,~-\sum^m_{i=1}b_iu_i \in W_1 \cap W_2$
 		
-		$u_i \notin \spann{\beta_2-\sett{u_i}}, u_i \notin \spann{\beta_1} \rightarrow\leftarrow$
+		$\because W_1 \cap W_2$ $\therefore \sum^n_{i=1}a_iv_i = -\sum^m_{i=1}b_iu_i = 0$
+		
+		$\because \beta_1 , \beta_2$ is linearly independent
+		
+		$\therefore$ scalar are 0, $\therefore \beta_1 \cup \beta_2$ is linearly independent
+		
+		$\therefore \beta_1 \cup \beta_2$ is a basis of V.
 		
 	\end{solution}
 \end{tcolorbox}
